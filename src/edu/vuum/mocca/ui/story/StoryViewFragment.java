@@ -226,7 +226,7 @@ public class StoryViewFragment extends Fragment {
 			// as a ringtone and play it back as such. Use the RingtonManager function getRingtone on
 			// the audioLinkPath to create the ringtone
 			
-			final Ringtone ringtone = null;
+			final Ringtone ringtone = RingtoneManager.getRingtone(getActivity(), Uri.parse(audioLinkPath));
 			
 			
 			audioButton.setOnClickListener(new OnClickListener() {

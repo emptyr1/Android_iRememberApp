@@ -282,14 +282,14 @@ public class CreateStoryActivity extends StoryActivityBase {
 
 		// TODO - Set the fileUri for this video file using the pre-made function
 		// getOutputMediaFile to create a new filename for this specific video;
-		
-		Uri filename = getOutputMediaFileUri(MEDIA_TYPE_VIDEO);
+		fragment.fileUri = getOutputMediaFileUri(MEDIA_TYPE_VIDEO);
+	//	Uri filename = getOutputMediaFileUri(MEDIA_TYPE_VIDEO);
 
 		
 		// TODO - Add the filename to the Intent as an extra. Use the Intent-extra name
 		// from the MediaStore class, EXTRA_OUTPUT
 
-		intent.putExtra(MediaStore.EXTRA_OUTPUT, filename);
+		intent.putExtra(MediaStore.EXTRA_OUTPUT, fragment.fileUri);
 
 		// TODO - Specify as an extra that the video quality should be HIGH. Use the
 		// Intent-extra name, EXTRA_VIDEO_QUALITY, from the MediaStore class
