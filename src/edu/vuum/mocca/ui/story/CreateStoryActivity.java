@@ -256,14 +256,14 @@ public class CreateStoryActivity extends StoryActivityBase {
 		// Hint: use standard Intent from MediaStore class
 		// See: http://developer.android.com/reference/android/provider/MediaStore.html
 		Intent intentImage = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-		
+		Uri imageUri = getOutputMediaFileUri(MEDIA_TYPE_IMAGE);
 		// TODO - Set the imagePath for this image file using the pre-made function
 		// getOutputMediaFile to create a new filename for this specific image;
-		File filenameUri = getOutputMediaFile(MEDIA_TYPE_IMAGE);
-		fragment.imagePath = Uri.parse(filenameUri.getAbsolutePath());
+	//	fragment.imagePath = getOutputMediaFileUri(MEDIA_TYPE_IMAGE);
+		fragment.imagePath = imageUri;
 		// TODO - Add the filename to the Intent as an extra. Use the Intent-extra name
 		// from the MediaStore class, EXTRA_OUTPUT
-		intentImage.putExtra(MediaStore.EXTRA_OUTPUT, filenameUri);
+		intentImage.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
 		
 		// TODO - Start a new activity for result, using the new intent and the request
 		// code CAMERA_PIC_REQUEST

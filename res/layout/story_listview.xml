@@ -66,7 +66,6 @@ University of Maryland to appear in their names.
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:onClick="test"
             android:text="@string/story_list_button_label_add" />
 
     </LinearLayout>

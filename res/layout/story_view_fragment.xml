@@ -83,7 +83,6 @@ University of Maryland to appear in their names.
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
 	            android:layout_alignParentRight="true"
-	            android:layout_below="@+id/story_view_value_story_id"
 	            android:text="@string/story_view_edittext_title_default_value"
 	            android:textAppearance="?android:attr/textAppearanceMedium" />   
 	  <!-- body -->
