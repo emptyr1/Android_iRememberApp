@@ -55,6 +55,8 @@ University of Maryland to appear in their names.
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+            android:textColor="#ec638b"
+        
         android:text="@string/server" />
 
     <EditText
@@ -67,6 +69,8 @@ University of Maryland to appear in their names.
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+            android:textColor="#ec638b"
+        
         android:text="@string/username" />
 
     <EditText

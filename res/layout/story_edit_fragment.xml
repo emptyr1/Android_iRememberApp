@@ -51,6 +51,8 @@ University of Maryland to appear in their names.
     android:id="@+id/StoryEditRelativeLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+    
     android:orientation="horizontal" >
 
    <ScrollView 
@@ -274,6 +276,7 @@ University of Maryland to appear in their names.
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="32dp"
+        android:background="@drawable/selector"
         android:text="@string/story_edit_button_message_save" />
 
     <Button
@@ -283,6 +286,7 @@ University of Maryland to appear in their names.
         android:layout_alignParentBottom="true"
         android:layout_alignBottom="@+id/story_edit_button_save"
         android:layout_centerHorizontal="true"
+        android:background="@drawable/selector"
         android:text="@string/story_edit_button_message_reset" />
 
     <Button
@@ -292,6 +296,7 @@ University of Maryland to appear in their names.
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_marginRight="21dp"
+        android:background="@drawable/selector"
         android:text="@string/story_edit_button_message_cancel" />
 
 </RelativeLayout>
